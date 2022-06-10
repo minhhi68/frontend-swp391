@@ -2036,6 +2036,7 @@ hr {
 .preloader .preloader-img {
     position: absolute;
     top: 50%;
+    size: 20px;
     z-index: 200;
     left: 0;
     right: 0;
@@ -6573,6 +6574,8 @@ form.search-box .search-form a {
 }
 
 .single-job-items .company-img img {
+    height: 70px;
+    width: 70px;
     overflow: hidden;
     float: left;
     margin-right: 32px;
