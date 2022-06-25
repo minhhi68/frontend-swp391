@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : about
     Created on : Jun 18, 2022, 7:03:42 PM
     Author     : tungn
@@ -20,7 +20,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
 
 
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="${contextPath}/Doc/css/font-awesome.min.css">
 
 
         <!-- CSS here -->
@@ -64,7 +64,7 @@
                                 </div>   -->
                                 <!-- <a href="index.html"><i class="fa fa-home fa-fw"></i> Home</a> -->
 
-                                <a href="index.html" i class="fa fa-home" style="font-size:30px; color: #fb246a;"></a>
+                                <a href="#" i class="fa fa-home" style="font-size:30px; color: #fb246a;"></a>
 
 
 
@@ -76,24 +76,24 @@
                                     <div class="main-menu">
                                         <nav class="d-none d-lg-block">
                                             <ul id="navigation">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="job_listing.html">Find Jobs </a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="../job_listing.html">Find Jobs </a></li>
                                                 <!-- <li><a href="about.html">About us</a></li> -->
                                                 <li><a href="#">Page</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="single-blog.html">Blog Details</a></li>
+                                                        <li><a href="../single-blog.html">Blog Details</a></li>
 
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.html">About us</a></li>
+                                                <li><a href="./contact.jsp">About us</a></li>
                                             </ul>
                                         </nav>
                                     </div>          
                                     <!-- Header-btn -->
                                     <div class="header-btn d-none f-right d-lg-block">
-                                        <a href="signup.html" class="btn head-btn1">Register</a>
-                                        <a href="signin.html" class="btn head-btn2">Login</a>
+                                        <a href="../signup.html" class="btn head-btn1">Register</a>
+                                        <a href="../signin.html" class="btn head-btn2">Login</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
             <div class="slider-area ">
                 <!-- Mobile Menu -->
                 <div class="slider-active">
-                    <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/imghuy.jpg">
+                    <div class="single-slider slider-height d-flex align-items-center" data-background="${contextPath}/assets/img/hero/imghuy.jpg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-9 col-md-10">
@@ -126,24 +126,24 @@
                             <div class="row">
                                 <div class="col-xl-8">
                                     <!-- form -->
-                                    <form action="#" class="search-box">
+                                    <form action="MainController" class="search-box">
                                         <div class="input-form">
-                                            <input type="text" placeholder="Job Tittle">
+                                            <input type="text" name="jobTitle" value="" placeholder="Job Title">
                                         </div>
                                         <div class="select-form">
                                             <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">Java</option>
-                                                    <option value="">JavaScript</option>
-                                                    <option value="">React JS</option>
-                                                    <option value="">Others</option>
+                                                <select name="jobTypes">
+                                                    <option>Java</option>
+                                                    <option>JavaScript</option>
+                                                    <option>React JS</option>
+                                                    <option>Others</option>
 
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="search-form">
-                                            <a href="#">Find job</a>
-                                        </div>	
+                                            <input class="submit-form" type="submit" name="btnAction" value="Find Job"/>
+                                       </div>	
                                     </form>	
                                 </div>
                             </div>
@@ -553,7 +553,7 @@
                                     <div class="blog-cap">
                                         <p>FPT Software recruited:</p>
                                         <h3><a href="single-blog.html">Fresher with background in JavaScript</a></h3>
-                                        <a href="#" class="more-btn">Read more »</a>
+                                        <a href="#" class="more-btn">Read more ï¿½</a>
                                     </div>
                                 </div>
                             </div>
@@ -572,7 +572,7 @@
                                     <div class="blog-cap">
                                         <p>Viettel Cooperation recruited:</p>
                                         <h3><a href="single-blog.html">Junior in Python</a></h3>
-                                        <a href="#" class="more-btn">Read more »</a>
+                                        <a href="#" class="more-btn">Read more ï¿½</a>
                                     </div>
                                 </div>
                             </div>
@@ -621,8 +621,8 @@
                                 <div class="footer-tittle">
                                     <h4>Important Link</h4>
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="index.jsp">Home</a></li>
+                                        <li><a href="contact.js">Contact Us</a></li>
                                         <li><a href="#">Support</a></li>
                                     </ul>
                                 </div>
