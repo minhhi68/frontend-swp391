@@ -206,7 +206,7 @@ form.search-box{
         @media #{$xs}{
             width: 100%;
         }
-        a,input.submit-form{
+        a,input[type=submit]{
             width: 100%;
             height: 70px;
             background:$btn-bg;

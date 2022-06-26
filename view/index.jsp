@@ -142,8 +142,8 @@
                                             </div>
                                         </div>
                                         <div class="search-form">
-                                            <input class="submit-form" type="submit" name="btnAction" value="Find Job"/>
-                                       </div>	
+                                            <input type="submit" name="btnAction" value="Find Job"/>
+                                        </div>
                                     </form>	
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
             </div>
             <!-- Our Services End -->
             <!-- Online CV Area Start -->
-            <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="assets/img/gallery/imghuy2.jpg">
+            <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="${contextPath}/assets/img/gallery/imghuy2.jpg">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-10">
@@ -381,7 +381,7 @@
             </section>
             <!-- Featured_job_end -->
             <!-- How  Apply Process Start-->
-            <div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
+            <div class="apply-process-area apply-bg pt-150 pb-150" data-background="${contextPath}/assets/img/gallery/how-applybg.png">
                 <div class="container">
                     <!-- Section Tittle -->
                     <div class="row">

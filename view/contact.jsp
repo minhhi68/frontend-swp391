@@ -43,7 +43,7 @@
                 <div class="preloader-inner position-relative">
                     <div class="preloader-circle"></div>
                     <div class="preloader-img pere-text">
-                        <img src="../assets/img/logo/logo1.png" alt="">
+                        <img src="${contextPath}/assets/img/logo/logo1.png" alt="">
                     </div>
                 </div>
             </div>
