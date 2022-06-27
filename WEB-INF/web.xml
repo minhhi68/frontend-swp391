@@ -4,9 +4,25 @@
         <servlet-name>MainController</servlet-name>
         <servlet-class>com.studentCV.servlet.MainController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginGoogleController</servlet-name>
+        <servlet-class>com.studenCV.Controller.LoginGoogleController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomePageServlet</servlet-name>
+        <servlet-class>com.studenCV.Controller.HomePageServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MainController</servlet-name>
         <url-pattern>/MainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginGoogleController</servlet-name>
+        <url-pattern>/LoginGoogleController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomePageServlet</servlet-name>
+        <url-pattern>/HomePageServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
