@@ -1,7 +1,7 @@
-    <%-- 
-    Document   : about
-    Created on : Jun 18, 2022, 7:03:42 PM
-    Author     : tungn
+<%-- 
+Document   : about
+Created on : Jun 18, 2022, 7:03:42 PM
+Author     : tungn
 --%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -17,25 +17,25 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 
-        <link rel="stylesheet" href="${contextPath}/Doc/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
         <!-- CSS here -->
-        <link rel="stylesheet" href="${contextPath}/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/flaticon.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/price_rangs.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/slicknav.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/animate.min.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/themify-icons.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/slick.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/nice-select.css">
-        <link rel="stylesheet" href="${contextPath}/assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/price_rangs.css">
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body>
@@ -45,7 +45,7 @@
                 <div class="preloader-inner position-relative">
                     <div class="preloader-circle"></div>
                     <div class="preloader-img pere-text">
-                        <img src="../assets/img/logo/logo1.png" alt="">
+                        <img src="assets/img/logo/logo1.png" alt="">
                     </div>
                 </div>
             </div>
@@ -60,11 +60,11 @@
                             <div class="col-lg-3 col-md-2">
                                 <!-- Logo -->
                                 <!-- <div class="logo">
-                                    <a href="index.html"><img src="../assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.jsp"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>   -->
-                                <!-- <a href="index.html"><i class="fa fa-home fa-fw"></i> Home</a> -->
+                                <!-- <a href="index.jsp"><i class="fa fa-home fa-fw"></i> Home</a> -->
 
-                                <a href="#" i class="fa fa-home" style="font-size:30px; color: #fb246a;"></a>
+                                <a href="index.jsp" i class="fa fa-home" style="font-size:30px; color: #fb246a;"></a>
 
 
 
@@ -76,24 +76,24 @@
                                     <div class="main-menu">
                                         <nav class="d-none d-lg-block">
                                             <ul id="navigation">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="../job_listing.html">Find Jobs </a></li>
-                                                <!-- <li><a href="about.html">About us</a></li> -->
+                                                <li><a href="index.jsp">Home</a></li>
+                                                <li><a href="job_listing.jsp">Find Jobs </a></li>
+                                                <!-- <li><a href="about.jsp">About us</a></li> -->
                                                 <li><a href="#">Page</a>
                                                     <ul class="submenu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="../single-blog.html">Blog Details</a></li>
+                                                        <li><a href="blog.jsp">Blog</a></li>
+                                                        <li><a href="single-blog.jsp">Blog Details</a></li>
 
                                                     </ul>
                                                 </li>
-                                                <li><a href="./contact.jsp">About us</a></li>
+                                                <li><a href="contact.jsp">About us</a></li>
                                             </ul>
                                         </nav>
                                     </div>          
                                     <!-- Header-btn -->
                                     <div class="header-btn d-none f-right d-lg-block">
-                                        <a href="../signup.html" class="btn head-btn1">Register</a>
-                                        <a href="../signin.html" class="btn head-btn2">Login</a>
+                                        <a href="signup.jsp" class="btn head-btn1">Register</a>
+                                        <a href="signin.jsp" class="btn head-btn2">Login</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
             <div class="slider-area ">
                 <!-- Mobile Menu -->
                 <div class="slider-active">
-                    <div class="single-slider slider-height d-flex align-items-center" data-background="${contextPath}/assets/img/hero/imghuy.jpg">
+                    <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/imghuy.jpg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-9 col-md-10">
@@ -126,17 +126,17 @@
                             <div class="row">
                                 <div class="col-xl-8">
                                     <!-- form -->
-                                    <form action="MainController" class="search-box">
+                                    <form action="#" class="search-box">
                                         <div class="input-form">
-                                            <input type="text" name="jobTitle" value="" placeholder="Job Title">
+                                            <input type="text" placeholder="Job Tittle">
                                         </div>
                                         <div class="select-form">
                                             <div class="select-itms">
-                                                <select name="jobTypes">
-                                                    <option>Java</option>
-                                                    <option>JavaScript</option>
-                                                    <option>React JS</option>
-                                                    <option>Others</option>
+                                                <select name="select" id="select1">
+                                                    <option value="">Java</option>
+                                                    <option value="">JavaScript</option>
+                                                    <option value="">React JS</option>
+                                                    <option value="">Others</option>
 
                                                 </select>
                                             </div>
@@ -171,7 +171,7 @@
                                     <span class="flaticon-tour"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">Java positions</a></h5>
+                                    <h5><a href="job_listing.jsp">Java positions</a></h5>
                                     <span>(653)</span>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                                     <span class="flaticon-cms"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">JavaScript positions</a></h5>
+                                    <h5><a href="job_listing.jsp">JavaScript positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
                                     <span class="flaticon-report"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">PHP positions</a></h5>
+                                    <h5><a href="job_listing.jsp">PHP positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@
                                     <span class="flaticon-app"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">React JS positions</a></h5>
+                                    <h5><a href="job_listing.jsp">React JS positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                                     <span class="flaticon-helmet"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">Python positions</a></h5>
+                                    <h5><a href="job_listing.jsp">Python positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                                     <span class="flaticon-high-tech"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">FullStack positions</a></h5>
+                                    <h5><a href="job_listing.jsp">FullStack positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@
                                     <span class="flaticon-real-estate"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">iOS developers positions</a></h5>
+                                    <h5><a href="job_listing.jsp">iOS developers positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                                     <span class="flaticon-content"></span>
                                 </div>
                                 <div class="services-cap">
-                                    <h5><a href="job_listing.html">Android developers positions</a></h5>
+                                    <h5><a href="job_listing.jsp">Android developers positions</a></h5>
                                     <span>(658)</span>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="browse-btn2 text-center mt-50">
-                                <a href="job_listing.html" class="border-btn2">Browse All Available Jobs</a>
+                                <a href="job_listing.jsp" class="border-btn2">Browse All Available Jobs</a>
                             </div>
                         </div>
                     </div>
@@ -274,7 +274,7 @@
                             <div class="cv-caption text-center">
                                 <p class="pera1">Create a free CV</p>
                                 <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                                <a href="signin.html" class="border-btn2 border-btn4">Upload your CV</a>
+                                <a href="signin.jsp" class="border-btn2 border-btn4">Upload your CV</a>
                             </div>
                         </div>
                     </div>
@@ -299,10 +299,10 @@
                             <div class="single-job-items mb-30">
                                 <div class="job-items">
                                     <div class="company-img">
-                                        <a href="job_details.html"><img src="../assets/img/icon/job-list1.png" alt=""></a>
+                                        <a href="job_details.jsp"><img src="assets/img/icon/job-list1.png" alt=""></a>
                                     </div>
                                     <div class="job-tittle">
-                                        <a href="job_details.html"><h4>Java intern</h4></a>
+                                        <a href="job_details.jsp"><h4>Java intern</h4></a>
                                         <ul>
                                             <li>FPT Software</li>
                                             <li><i class="fas fa-map-marker-alt"></i>Danang, Vietnam</li>
@@ -311,7 +311,7 @@
                                     </div>
                                 </div>
                                 <div class="items-link f-right">
-                                    <a href="job_details.html">Full Time</a>
+                                    <a href="job_details.jsp">Full Time</a>
                                     <span>19 hours ago</span>
                                 </div>
                             </div>
@@ -319,10 +319,10 @@
                             <div class="single-job-items mb-30">
                                 <div class="job-items">
                                     <div class="company-img">
-                                        <a href="job_details.html"><img src="../assets/img/icon/job-list2.png" alt=""></a>
+                                        <a href="job_details.jsp"><img src="assets/img/icon/job-list2.png" alt=""></a>
                                     </div>
                                     <div class="job-tittle">
-                                        <a href="job_details.html"><h4>Python senior</h4></a>
+                                        <a href="job_details.jsp"><h4>Python senior</h4></a>
                                         <ul>
                                             <li>HP Vietnam</li>
                                             <li><i class="fas fa-map-marker-alt"></i>Hanoi, Vietnam</li>
@@ -331,7 +331,7 @@
                                     </div>
                                 </div>
                                 <div class="items-link f-right">
-                                    <a href="job_details.html">Full Time</a>
+                                    <a href="job_details.jsp">Full Time</a>
                                     <span>12 hours ago</span>
                                 </div>
                             </div>
@@ -339,10 +339,10 @@
                             <div class="single-job-items mb-30">
                                 <div class="job-items">
                                     <div class="company-img">
-                                        <a href="job_details.html"><img src="../assets/img/icon/job-list3.png" alt=""></a>
+                                        <a href="job_details.jsp"><img src="assets/img/icon/job-list3.png" alt=""></a>
                                     </div>
                                     <div class="job-tittle">
-                                        <a href="job_details.html"><h4>React JS senior</h4></a>
+                                        <a href="job_details.jsp"><h4>React JS senior</h4></a>
                                         <ul>
                                             <li>Samsung Vietnam</li>
                                             <li><i class="fas fa-map-marker-alt"></i>Ho Chi Minh City, Vietnam</li>
@@ -351,7 +351,7 @@
                                     </div>
                                 </div>
                                 <div class="items-link f-right">
-                                    <a href="job_details.html">Part Time</a>
+                                    <a href="job_details.jsp">Part Time</a>
                                     <span>14 hours ago</span>
                                 </div>
                             </div>
@@ -359,10 +359,10 @@
                             <div class="single-job-items mb-30">
                                 <div class="job-items">
                                     <div class="company-img">
-                                        <a href="job_details.html"><img src="../assets/img/icon/job-list4.png" alt=""></a>
+                                        <a href="job_details.jsp"><img src="assets/img/icon/job-list4.png" alt=""></a>
                                     </div>
                                     <div class="job-tittle">
-                                        <a href="job_details.html"><h4>Software tester</h4></a>
+                                        <a href="job_details.jsp"><h4>Software tester</h4></a>
                                         <ul>
                                             <li>Thegioididong</li>
                                             <li><i class="fas fa-map-marker-alt">Danang, Vietnam</i></li>
@@ -371,7 +371,7 @@
                                     </div>
                                 </div>
                                 <div class="items-link f-right">
-                                    <a href="job_details.html">Full Time</a>
+                                    <a href="job_details.jsp">Full Time</a>
                                     <span>7 hours ago</span>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@
                                         <!-- founder -->
                                         <div class="testimonial-founder  ">
                                             <div class="founder-img mb-30">
-                                                <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
+                                                <img src="assets/img/testmonial/testimonial-founder.png" alt="">
                                                 <span>Margaret Lawson</span>
                                                 <p>Creative Director</p>
                                             </div>
@@ -462,7 +462,7 @@
                                         <!-- founder -->
                                         <div class="testimonial-founder  ">
                                             <div class="founder-img mb-30">
-                                                <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
+                                                <img src="assets/img/testmonial/testimonial-founder.png" alt="">
                                                 <span>Margaret Lawson</span>
                                                 <p>Creative Director</p>
                                             </div>
@@ -479,7 +479,7 @@
                                         <!-- founder -->
                                         <div class="testimonial-founder  ">
                                             <div class="founder-img mb-30">
-                                                <img src="../assets/img/testmonial/testimonial-founder.png" alt="">
+                                                <img src="assets/img/testmonial/testimonial-founder.png" alt="">
                                                 <span>Margaret Lawson</span>
                                                 <p>Creative Director</p>
                                             </div>
@@ -509,13 +509,13 @@
                                 <div class="support-caption">
                                     <p class="pera-top">We always welcome young people with a little experiences and young fresher graduate students. This is the place where you will feel like your home. </p>
                                     <p>Post your jobs you need to recruit below and we will do the rest.</p>
-                                    <a href="about.html" class="btn post-btn">Post a job</a>
+                                    <a href="about.jsp" class="btn post-btn">Post a job</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
                             <div class="support-location-img">
-                                <img src="../assets/img/service/support-img.jpg" alt="">
+                                <img src="assets/img/service/support-img.jpg" alt="">
                                 <div class="support-img-cap text-center">
                                     <p>Since</p>
                                     <span>2022</span>
@@ -543,7 +543,7 @@
                             <div class="home-blog-single mb-30">
                                 <div class="blog-img-cap">
                                     <div class="blog-img">
-                                        <img src="../assets/img/blog/home-blog1.jpg" alt="">
+                                        <img src="assets/img/blog/home-blog1.jpg" alt="">
                                         <!-- Blog date -->
                                         <div class="blog-date text-center">
                                             <span>24</span>
@@ -552,7 +552,7 @@
                                     </div>
                                     <div class="blog-cap">
                                         <p>FPT Software recruited:</p>
-                                        <h3><a href="single-blog.html">Fresher with background in JavaScript</a></h3>
+                                        <h3><a href="single-blog.jsp">Fresher with background in JavaScript</a></h3>
                                         <a href="#" class="more-btn">Read more �</a>
                                     </div>
                                 </div>
@@ -562,7 +562,7 @@
                             <div class="home-blog-single mb-30">
                                 <div class="blog-img-cap">
                                     <div class="blog-img">
-                                        <img src="../assets/img/blog/home-blog2.jpg" alt="">
+                                        <img src="assets/img/blog/home-blog2.jpg" alt="">
                                         <!-- Blog date -->
                                         <div class="blog-date text-center">
                                             <span>15</span>
@@ -571,7 +571,7 @@
                                     </div>
                                     <div class="blog-cap">
                                         <p>Viettel Cooperation recruited:</p>
-                                        <h3><a href="single-blog.html">Junior in Python</a></h3>
+                                        <h3><a href="single-blog.jsp">Junior in Python</a></h3>
                                         <a href="#" class="more-btn">Read more �</a>
                                     </div>
                                 </div>
@@ -622,7 +622,7 @@
                                     <h4>Important Link</h4>
                                     <ul>
                                         <li><a href="index.jsp">Home</a></li>
-                                        <li><a href="contact.js">Contact Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
                                         <li><a href="#">Support</a></li>
                                     </ul>
                                 </div>
@@ -645,7 +645,7 @@
                                     onblur="this.placeholder = ' Email Address '">
                                     <div class="form-icon">
                                         <button type="submit" name="submit" id="newsletter-submit"
-                                        class="email_icon newsletter-submit button-contactForm"><img src="../assets/img/icon/form.png" alt=""></button>
+                                        class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form.png" alt=""></button>
                                     </div>
                                     <div class="mt-10 info"></div>
                                 </form>
@@ -660,7 +660,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <!-- logo -->
                             <!-- <div class="footer-logo mb-20">
-                            <a href="index.html"><img src="../assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.jsp"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                             </div> -->
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
@@ -715,39 +715,39 @@
         <!-- JS here -->
 
         <!-- All JS Custom Plugins Link Here here -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
         <!-- Jquery, Popper, Bootstrap -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/popper.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
         <!-- Jquery Mobile Menu -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.slicknav.min.js"></script>
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
 
         <!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/slick.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/price_rangs.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/price_rangs.js"></script>
 
         <!-- One Page, Animated-HeadLin -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/wow.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/animated.headline.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.magnific-popup.js"></script>
+        <script src="./assets/js/wow.min.js"></script>
+        <script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
 
         <!-- Scrollup, nice-select, sticky -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.scrollUp.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.nice-select.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.sticky.js"></script>
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+        <script src="./assets/js/jquery.sticky.js"></script>
 
         <!-- contact js -->
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/contact.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.form.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/mail-script.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
         <!-- Jquery Plugins, main Jquery -->	
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/plugins.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
 
     </body>
 </html>
