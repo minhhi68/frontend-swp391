@@ -305,7 +305,7 @@ Author     : tungn
                                     <div class="company-img">
                                         <a href="job_details.jsp"><img src="assets/img/icon/job-list1.png" alt=""></a>
                                     </div>
-                                    <div class="job-tittle">
+                                    <div class="job-title">
                                         <a href="job_details.jsp"><h4>Java intern</h4></a>
                                         <ul>
                                             <li>FPT Software</li>
@@ -325,7 +325,7 @@ Author     : tungn
                                     <div class="company-img">
                                         <a href="job_details.jsp"><img src="assets/img/icon/job-list2.png" alt=""></a>
                                     </div>
-                                    <div class="job-tittle">
+                                    <div class="job-title">
                                         <a href="job_details.jsp"><h4>Python senior</h4></a>
                                         <ul>
                                             <li>HP Vietnam</li>
@@ -345,7 +345,7 @@ Author     : tungn
                                     <div class="company-img">
                                         <a href="job_details.jsp"><img src="assets/img/icon/job-list3.png" alt=""></a>
                                     </div>
-                                    <div class="job-tittle">
+                                    <div class="job-title">
                                         <a href="job_details.jsp"><h4>React JS senior</h4></a>
                                         <ul>
                                             <li>Samsung Vietnam</li>
@@ -365,7 +365,7 @@ Author     : tungn
                                     <div class="company-img">
                                         <a href="job_details.jsp"><img src="assets/img/icon/job-list4.png" alt=""></a>
                                     </div>
-                                    <div class="job-tittle">
+                                    <div class="job-title">
                                         <a href="job_details.jsp"><h4>Software tester</h4></a>
                                         <ul>
                                             <li>Thegioididong</li>

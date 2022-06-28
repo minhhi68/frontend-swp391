@@ -6077,11 +6077,11 @@ form.search-box .search-form a, form.search-box .search-form input[type=submit] 
   z-index: 999;
 }
 @media (max-width: 767px) {
-  .single-job-items .job-tittle {
+  .single-job-items .job-title {
     padding-top: 25px;
   }
 }
-.single-job-items .job-tittle a h4 {
+.single-job-items .job-title a h4 {
   color: #28395a;
   font-size: 24px;
   -webkit-transition: 0.4s;
@@ -6089,10 +6089,10 @@ form.search-box .search-form a, form.search-box .search-form input[type=submit] 
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-.single-job-items .job-tittle a h4:hover {
+.single-job-items .job-title a h4:hover {
   color: #8b92dd;
 }
-.single-job-items .job-tittle ul li {
+.single-job-items .job-title ul li {
   display: inline-block;
   margin-right: 48px;
   font-size: 15px;
@@ -6100,31 +6100,31 @@ form.search-box .search-form a, form.search-box .search-form input[type=submit] 
   line-height: 1.8;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .single-job-items .job-tittle ul li {
+  .single-job-items .job-title ul li {
     margin-right: 18px;
   }
 }
 @media (max-width: 767px) {
-  .single-job-items .job-tittle ul li {
+  .single-job-items .job-title ul li {
     margin-right: 0px;
     margin-bottom: 7px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .single-job-items .job-tittle ul li {
+  .single-job-items .job-title ul li {
     margin-right: 8px;
   }
 }
-.single-job-items .job-tittle ul li:last-child {
+.single-job-items .job-title ul li:last-child {
   margin-right: 0px;
 }
-.single-job-items .job-tittle ul li i {
+.single-job-items .job-title ul li i {
   font-size: 14px;
   color: #bbbbbb;
   margin-right: 10px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .single-job-items .job-tittle2 {
+  .single-job-items .job-title2 {
     padding-top: 25px;
   }
 }

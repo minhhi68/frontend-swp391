@@ -305,7 +305,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list1.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Python junior</h4>
                                                 </a>
@@ -327,7 +327,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list2.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Java Senior</h4>
                                                 </a>
@@ -349,7 +349,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list3.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>React JS fresher</h4>
                                                 </a>
@@ -371,7 +371,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list4.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -393,7 +393,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list5.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>iOS Developer</h4>
                                                 </a>
@@ -415,7 +415,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list6.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Android Developer</h4>
                                                 </a>
@@ -438,12 +438,12 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list66.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>.NET Developer</h4>
                                                 </a>
                                                 <ul>
-                                                    <li>Công ty Tekmedi</li>
+                                                    <li>Cï¿½ng ty Tekmedi</li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Danang</li>
                                                     <li>21.000.000 VND/month</li>
                                                 </ul>
@@ -462,12 +462,12 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list78.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>.NET Developer</h4>
                                                 </a>
                                                 <ul>
-                                                    <li>CÔNG TY B?N VIÊN </li>
+                                                    <li>Cï¿½NG TY B?N VIï¿½N </li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Hanoi</li>
                                                     <li>26.000.000 VND/month</li>
                                                 </ul>
@@ -484,7 +484,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list61.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>JavaScript Developer</h4>
                                                 </a>
@@ -507,7 +507,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list79.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>ReactJS Developer</h4>
                                                 </a>
@@ -531,7 +531,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list67.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -555,7 +555,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list80.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -578,7 +578,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list81.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -602,7 +602,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list68.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -625,7 +625,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list65.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>.NET Developer</h4>
                                                 </a>
@@ -649,7 +649,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list70.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -672,12 +672,12 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list62.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>ReactJS Developer</h4>
                                                 </a>
                                                 <ul>
-                                                    <li>CÔNG TY LAICHI</li>
+                                                    <li>Cï¿½NG TY LAICHI</li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Hanoi, Vietnam</li>
                                                     <li>21.000.000 VND/month</li>
                                                 </ul>
@@ -696,13 +696,13 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list63.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>ReactJS Developer</h4>
                                                 </a>
                                                 <ul>
                                                     <li>
-                                                        Công Ty K&G<li>
+                                                        Cï¿½ng Ty K&G<li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Danang, Vietnam</li>
                                                     <li>23.000.000 VND/month</li>
                                                 </ul>
@@ -720,7 +720,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list71.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>PHP Developer</h4>
                                                 </a>
@@ -744,12 +744,12 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list72.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Java Developer</h4>
                                                 </a>
                                                 <ul>
-                                                    <li>Công ty VINID</li>
+                                                    <li>Cï¿½ng ty VINID</li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Danang</li>
                                                     <li>24.000.000 VND/month</li>
                                                 </ul>
@@ -767,7 +767,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list73.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Java Developer</h4>
                                                 </a>
@@ -790,7 +790,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list75.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Java Developer</h4>
                                                 </a>
@@ -815,7 +815,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list64.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>.NET Developer</h4>
                                                 </a>
@@ -839,7 +839,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list74.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Java Developer</h4>
                                                 </a>
@@ -863,13 +863,13 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list76.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>ReactJS Developer</h4>
                                                 </a>
                                                 <ul>
                                                     <li>
-                                                        CÔNG TY FITMED<li>
+                                                        Cï¿½NG TY FITMED<li>
                                                     <li><i class="fas fa-map-marker-alt"></i>Hanoi</li>
                                                     <li>25.000.000 VND/month</li>
                                                 </ul>
@@ -887,7 +887,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list77.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>ReactJS Developer</h4>
                                                 </a>
@@ -913,7 +913,7 @@
                                             <div class="company-img">
                                                 <a href="#"><img src="assets/img/icon/job-list7.png" alt=""></a>
                                             </div>
-                                            <div class="job-tittle job-tittle2">
+                                            <div class="job-title job-title2">
                                                 <a href="#">
                                                     <h4>Angular JS Developer</h4>
                                                 </a>
