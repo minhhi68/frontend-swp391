@@ -20,7 +20,7 @@ Author     : tungn
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
 
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Doc/css/font-awesome.min.css">
 
 
         <!-- CSS here -->
