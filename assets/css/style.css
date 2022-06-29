@@ -6071,6 +6071,8 @@ form.search-box .search-form a, form.search-box .search-form input[type=submit] 
   }
 }
 .single-job-items .company-img img {
+  height: 70px;
+  width: 70px;
   overflow: hidden;
   float: left;
   margin-right: 32px;
