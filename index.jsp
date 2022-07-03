@@ -93,8 +93,8 @@ Author     : tungn
                                     <!-- Header-btn -->
                                     <div class="header-btn d-none f-right d-lg-block">
                                         <form action="LoginGoogleController" method="POST">
-                                            <a style="color: black" class="btn w-100 btn-lg btn-outline-dark"
-                                               href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
+                                            <a  style="color: black" class="btn w-100 btn-lg btn-outline-dark"
+                                                href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/StudentCV/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
                                                 Login With Google                                               
                                             </a>
                                         </form>
@@ -130,17 +130,17 @@ Author     : tungn
                             <div class="row">
                                 <div class="col-xl-8">
                                     <!-- form -->
-                                    <form action="#" class="search-box">
+                                    <form action="MainController" class="search-box">
                                         <div class="input-form">
-                                            <input type="text" placeholder="Job Tittle">
+                                            <input type="text" name="searchJobValue"placeholder="Job Title">
                                         </div>
                                         <div class="select-form">
                                             <div class="select-itms">
-                                                <select name="select" id="select1">
-                                                    <option value="">Java</option>
-                                                    <option value="">JavaScript</option>
-                                                    <option value="">React JS</option>
-                                                    <option value="">Others</option>
+                                                <select name="selectJob" id="select1">
+                                                    <option>Java</option>
+                                                    <option>JavaScript</option>
+                                                    <option>React JS</option>
+                                                    <option>Others</option>
 
                                                 </select>
                                             </div>
