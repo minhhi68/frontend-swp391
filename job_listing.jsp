@@ -87,6 +87,10 @@
                                     <div class="header-btn d-none f-right d-lg-block">
                                         <a href="signup.jsp" class="btn head-btn1">Register</a>
                                         <a href="signin.jsp" class="btn head-btn2">Login</a>
+                                        <a  style="color: black" class="btn w-100 btn-lg btn-outline-dark"
+                                            href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/StudentCV/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
+                                            Login With Google                                               
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -181,11 +185,11 @@
                                     <!-- Select job items start -->
                                     <div class="select-job-items2">
                                         <select name="select">
-                                            <option value="">Anywhere</option>
-                                            <option value="">Category 1</option>
-                                            <option value="">Category 2</option>
-                                            <option value="">Category 3</option>
-                                            <option value="">Category 4</option>
+                                            <option>Anywhere</option>
+                                            <option>Category 1</option>
+                                            <option>Category 2</option>
+                                            <option>Category 3</option>
+                                            <option>Category 4</option>
                                         </select>
                                     </div>
                                     <!--  Select job items End-->
