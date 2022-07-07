@@ -250,9 +250,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="search-form">
-                                        <input type="submit" name="btnAction" style="color: #fb246a" value="Find Job"/>
-                                        </div>
+                                    <form action = "mainController" method="post">
+                                        <div class="search-form">
+                                            <input type="submit" name="btnAction" style="color: #fb246a" value="Find Job"/>
+                                            </div>
+                                        </form>
                                     <!-- select-Categories End -->
                                 </div>
                                 <div class="single-listing">
