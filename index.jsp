@@ -133,15 +133,12 @@ Author     : tungn
                                             <input type="text" name="searchJobValue"placeholder="Job Title">
                                         </div>
                                         <div class="select-form">
-                                            <div class="select-itms">
-                                                <select name="selectJob" id="select1">
-                                                    <option>Java</option>
-                                                    <option>JavaScript</option>
-                                                    <option>React JS</option>
-                                                    <option>Others</option>
-
-                                                </select>
-                                            </div>
+                                            <select name="selectJob">
+                                                <option>Java</option>
+                                                <option>JavaScript</option>
+                                                <option>React JS</option>
+                                                <option>Others</option>
+                                            </select>
                                         </div>
                                         <div class="search-form">
                                             <input type="submit" name="btnAction" value="Find Job"/>
