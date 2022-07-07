@@ -249,6 +249,10 @@
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
+
+                                    <div class="search-form">
+                                        <input type="submit" name="btnAction" style="color: #fb246a" value="Find Job"/>
+                                        </div>
                                     <!-- select-Categories End -->
                                 </div>
                                 <div class="single-listing">
