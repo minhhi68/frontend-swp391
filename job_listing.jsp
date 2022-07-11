@@ -1,8 +1,12 @@
 <%-- Document : about Created on : Jun 18, 2022, 7:03:42 PM Author : tungn --%>
 
+<%@page import="com.studentCV.utils.Utils"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.time.format.DateTimeFormatter"%>
+<%@page import="java.time.LocalDateTime"%>
 <%@page import="com.studentCV.DTO.JobDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
@@ -317,25 +321,29 @@
                                     <div class="single-job-items mb-30">
                                         <div class="job-items">
                                             <div class="company-img">
-                                                <a href="#"><img src="assets/img/icon/job-list1.png" alt=""></a>
+                                                <a href="#"><img src="<%=job.getCompany().getImg() %>" alt=""></a>
                                             </div>
                                             <div class="job-title job-title2">
                                                 <a href="#">
-                                                    <h4><%=job.getJobName() %></h4>
+                                                    <h4><%=job.getJobName()%></h4>
                                                 </a>
                                                 <ul>
-                                                    <li><%=job.getCompany().getCompanyName() %></li>
-                                                    <li><i class="fas fa-map-marker-alt"></i><%=job.getJobLocation() %></li>
-                                                    <li><%=job.getSalary() %> VND/month</li>
+                                                    <li><%=job.getCompany().getCompanyName()%></li>
+                                                    <li><i class="fas fa-map-marker-alt"></i><%=job.getJobLocation()%></li>
+                                                    <li><%=job.getSalary()%> VND/month</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="items-link items-link2 f-right">
-                                            <a href="job_details.jsp"><%=job.getJobType() %></a>
-                                            <% 
-                                            
+                                            <a href="job_details.jsp"><%=job.getJobType()%></a>
+                                            <%
+                                                Utils utils = new Utils();
+                                                if (utils.countDate(job.getJobPostDate()) > 0) {%>
+                                            <span><%=utils.countDate(job.getJobPostDate())%> days to expired</span>
+                                            <% } else { %>
+                                            <span>Job was expired</span>    
+                                            <% }
                                             %>
-                                            <span><%= %> to expired</span>
                                         </div>
                                     </div>
                                     <%                                            }

@@ -12,6 +12,10 @@
         <servlet-name>HomePageServlet</servlet-name>
         <servlet-class>com.studenCV.Controller.HomePageServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>JobListingController</servlet-name>
+        <servlet-class>com.studenCV.Controller.JobListingController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MainController</servlet-name>
         <url-pattern>/MainController</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
         <url-pattern>/HomePageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JobListingController</servlet-name>
+        <url-pattern>/JobListingController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
