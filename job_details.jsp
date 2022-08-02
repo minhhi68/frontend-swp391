@@ -140,6 +140,9 @@
                                 <p>Job Type: ${jobDetails.jobType}</p>
                                 <p>Job Salary ${String.format("%.02f", jobDetails.salary)} VND / Month</p> 
                                 <p>Experience: ${jobDetails.jobExperience} years</p> 
+                                <p>Working location: <br/>
+                                    ${jobDetails.jobLocation}
+                                </p>
                                 <c:set var="days" value="${requestScope.days_until}"/>
                                 <c:if test="${days ge 0}">
                                     <p>${days} days left until closed</p>
