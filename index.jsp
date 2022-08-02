@@ -625,10 +625,13 @@ Author     : tungn
                                     <h4>Contact Info</h4>
                                     <ul>
                                         <li>
-                                            <p>Address: FPT University, District 9, HCMC</p>
+                                            <p> FPT University HCMC <br /> 
+                                                Address: <br />
+                                                Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM.
+                                            </p>
                                         </li>
-                                        <li><a href="#">Phone : +12345678</a></li>
-                                        <li><a href="#">Email : huynmse161323@fpt.edu.vn</li>
+                                        <li><a href="#">Phone : (028) 7300 5588</a></li>
+                                        <li><a href="mailto:daihoc.hcm@fpt.edu.vn">Email : daihoc.hcm@fpt.edu.vn</li>
                                     </ul>
                                 </div>
 

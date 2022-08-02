@@ -4,8 +4,7 @@
     Author     : tungn
 --%>
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" /><!doctype html>
 <html class="no-js" lang="zxx">
@@ -175,21 +174,22 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>FPT University HCMC</h3>
-                                <p>District 9</p>
+                                <h3>FPT University HCMC - TRƯỜNG ĐẠI HỌC FPT</h3>
+                                <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM.</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>012345678</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3>(028) 7300 5588</h3>
+                                <p>Mon to Fri: 8AM to 12PM - 1PM to 5PM</p>
+                                <p>Sat: 8AM to 12PM</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>huynmse161323@fpt.edu.vn</h3>
+                                <h3>daihoc.hcm@fpt.edu.vn</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>
@@ -222,10 +222,13 @@
                                     <h4>Contact Info</h4>
                                     <ul>
                                         <li>
-                                            <p>Address: FPT University, District 9, HCMC</p>
+                                            <p> FPT University HCMC <br /> 
+                                                Address: <br />
+                                                Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM.
+                                            </p>
                                         </li>
-                                        <li><a href="#">Phone : +12345678</a></li>
-                                        <li><a href="#">Email : huynmse161323@fpt.edu.vn</li>
+                                        <li><a href="#">Phone : (028) 7300 5588</a></li>
+                                        <li><a href="mailto:daihoc.hcm@fpt.edu.vn">Email : daihoc.hcm@fpt.edu.vn</li>
                                     </ul>
                                 </div>
 
@@ -236,7 +239,7 @@
                                 <div class="footer-tittle">
                                     <h4>Important Link</h4>
                                     <ul>
-                                        <li><a href='view/index.jsp'>Home</a></li>
+                                        <li><a href='index.jsp'>Home</a></li>
                                         <li><a href="#">Contact Us</a></li>
                                         <li><a href="#">Support</a></li>
                                     </ul>

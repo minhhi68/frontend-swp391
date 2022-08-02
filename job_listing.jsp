@@ -6,7 +6,7 @@
 <%@page import="java.time.LocalDateTime"%>
 <%@page import="com.studentCV.DTO.JobDTO"%>
 <%@page import="java.util.ArrayList"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="ISO-8859-1" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
@@ -227,10 +227,10 @@
                                         <div class="select-job-items2">
                                             <select name="selectLoc">
                                                 <option>Anywhere</option>
-                                                <option>Category 1</option>
-                                                <option>Category 2</option>
-                                                <option>Category 3</option>
-                                                <option>Category 4</option>
+                                                <option>Hồ Chí Minh</option>
+                                                <option>Hà Nội</option>
+                                                <option>Đà Nẵng</option>
+                                                <option>Hải Phòng</option>
                                             </select>
                                         </div>
                                         <!--  Select job items End-->
