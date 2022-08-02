@@ -148,10 +148,8 @@ Author     : tungn
                                         </div>
                                         <div class="select-form">
                                             <select name="selectJob">
-                                                <option>Java</option>
-                                                <option>JavaScript</option>
-                                                <option>React JS</option>
-                                                <option>Others</option>
+                                                <option>Full Time</option>
+                                                <option>Part Time</option>
                                             </select>
                                         </div>
                                         <div class="search-form">
