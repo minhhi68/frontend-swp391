@@ -7,12 +7,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" /><!doctype html>
+<c:set var="jobDetails" value="${requestScope.DETAILS_RESULT}"/>
+<!--If job details existed-->
+<c:if test="${not empty jobDetails}">
+    <c:set var="companyDetails" value="${jobDetails.company}"/>
+</c:if>
+
 <html class="no-js" lang="zxx">
 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contact us</title>
+        <c:if test="${not empty jobDetails}">
+            <title>${companyDetails.companyName} đang tuyển dụng ${jobDetails.jobName}</title>
+        </c:if>
+        <c:if test="${empty jobDetails}">
+            <title>Job Error</title>
+        </c:if>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -125,10 +137,8 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
-                <c:set var="jobDetails" value="${requestScope.DETAILS_RESULT}"/>
                 <!--If job details existed-->
                 <c:if test="${not empty jobDetails}">
-                    <c:set var="companyDetails" value="${jobDetails.company}"/>
                     <div class="row">
                         <div class="col-12">
                             <h2 class="contact-title">${jobDetails.jobName}</h2>
@@ -162,6 +172,7 @@
     
                         <div class="col-lg-3 offset-lg-1">
                             <!--This part for contact info-->
+                            <h3>${companyDetails.companyName}</h3> <br />
                             <div class="media contact-info">
                                 <span class="contact-info__icon"><i class="ti-home"></i></span>
                                 <div class="media-body">
