@@ -327,11 +327,15 @@
                                     <!-- single-job-content -->
                                     <div class="single-job-items mb-30">
                                         <div class="job-items">
+                                            <c:url var="jobDetails" value="MainController">
+                                                <c:param name="btnAction" value="Show Job"/>
+                                                <c:param name="jobId" value="<%=Integer.toString(job.getJobId())%>"/>
+                                            </c:url>
                                             <div class="company-img">
-                                                <a href="#"><img src="<%=job.getCompany().getImg() %>" alt=""></a>
+                                                <a href="${jobDetails}"><img src="<%=job.getCompany().getImg() %>" alt=""></a>
                                             </div>
                                             <div class="job-title job-title2">
-                                                <a href="#">
+                                                <a href="${jobDetails}">
                                                     <h4><%=job.getJobName()%></h4>
                                                 </a>
                                                 <ul>
@@ -342,7 +346,7 @@
                                             </div>
                                         </div>
                                         <div class="items-link items-link2 f-right">
-                                            <a href="job_details.jsp"><%=job.getJobType()%></a>
+                                            <a href="${jobDetails}"><%=job.getJobType()%></a>
                                             <%
                                                 Utils utils = new Utils();
                                                 if (utils.countDate(job.getJobPostDate()) > 0) {%>
