@@ -88,7 +88,7 @@
                                                         <li><a href="single-blog.jsp">Blog Details</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.jsp">About us</a></li>
+                                                <li><a href="contact.jsp">Contact us</a></li>
                                             </ul>
                                         </nav>
                                     </div>
