@@ -77,7 +77,14 @@ Author     : tungn
                                         <nav class="d-none d-lg-block">
                                             <ul id="navigation">
                                                 <li><a href="index.jsp">Home</a></li>
-                                                <li><a href="job_listing.jsp">Find Jobs </a></li>
+                                                <li>
+                                                    <c:url var="jobListingAll" value="MainController">
+                                                        <c:param name="btnAction" value="Find Job"/>
+                                                        <c:param name="searchJobValue" value=""/>
+                                                        <c:param name="selectJob" value=""/>
+                                                    </c:url>
+                                                    <a href="${jobListingAll}">Find Jobs </a>
+                                                </li>
                                                 <!-- <li><a href="about.jsp">About us</a></li> -->
                                                 <li><a href="#">Page</a>
                                                     <ul class="submenu">
