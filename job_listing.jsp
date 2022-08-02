@@ -87,12 +87,25 @@
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
-                                    <div class="header-btn d-none f-right d-lg-block">
-                                        <a style="color: black" class="btn w-100 btn-lg btn-outline-dark"
-                                           href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/StudentCV/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
-                                            Login With Google
-                                        </a>
-                                    </div>
+                                    <c:set var="account" value="${sessionScope.USER}"/>
+                                    <%--not empty means there is an account, check for admin role --%>
+                                    <c:if test="${not empty account}">
+                                        Welcome, ${account.email}        
+                                        <c:url var="logoutAccount" value="MainController">
+                                            <c:param name="btnAction" value="Logout"/>
+                                        </c:url>
+                                        <a href="${logoutAccount}" class="btn head-btn2">Logout</a>
+                                    </c:if>
+                                    
+                                    <%--Guest section --%>        
+                                    <c:if test="${empty account}">
+                                        <div class="header-btn d-none f-right d-lg-block">
+                                            <a  style="color: black" class="btn w-100 btn-lg btn-outline-dark"
+                                                href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/StudentCV/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
+                                                Login With Google                                               
+                                            </a>
+                                        </div>
+                                    </c:if>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
