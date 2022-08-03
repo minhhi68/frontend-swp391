@@ -102,6 +102,9 @@
                                         <c:url var="logoutAccount" value="MainController">
                                             <c:param name="btnAction" value="Logout"/>
                                         </c:url>
+                                        <i class="fa-solid fa-circle-user"></i>
+                                        <a href="#">My profile</a>
+                                        <a href="#">Edit profile</a>
                                         <a href="${logoutAccount}" class="btn head-btn2">Logout</a>
                                     </c:if>
                                     
