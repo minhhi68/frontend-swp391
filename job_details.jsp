@@ -90,14 +90,6 @@
                                                 <li>
                                                     <a href="${jobListingAll}">Find Jobs </a>
                                                 </li>
-                                                <!-- <li><a href="about.jsp">About</a></li> -->
-                                                <li><a href="#">Page</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.jsp">Blog</a></li>
-                                                        <li><a href="single-blog.jsp">Blog Details</a></li>
-
-                                                    </ul>
-                                                </li>
                                                 <li><a href="contact.jsp">Contact us</a></li>
                                             </ul>
                                         </nav>

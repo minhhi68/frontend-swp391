@@ -4,15 +4,27 @@
     Author     : tungn
 --%>
 
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" /><!doctype html>
+<c:set var="jobDetails" value="${requestScope.DETAILS_RESULT}"/>
+<!--If job details existed-->
+<c:if test="${not empty jobDetails}">
+    <c:set var="companyDetails" value="${jobDetails.company}"/>
+</c:if>
+
 <html class="no-js" lang="zxx">
 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contact us</title>
+        <c:if test="${not empty jobDetails}">
+            <title>${companyDetails.companyName} đang tuyển dụng ${jobDetails.jobName}</title>
+        </c:if>
+        <c:if test="${empty jobDetails}">
+            <title>Job Error</title>
+        </c:if>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -35,6 +47,14 @@
     </head>
 
     <body>
+        <!--Variables-->
+        <c:url var="jobListingAll" value="MainController">
+            <c:param name="btnAction" value="Find Job"/>
+            <c:param name="searchJobValue" value=""/>
+            <c:param name="selectJob" value=""/>
+        </c:url>
+
+
         <!-- Preloader Start -->
         <div id="preloader-active">
             <div class="preloader d-flex align-items-center justify-content-center">
@@ -68,14 +88,17 @@
                                             <ul id="navigation">
                                                 <li><a href="index.jsp">Home</a></li>
                                                 <li>
-                                                    <c:url var="jobListingAll" value="MainController">
-                                                        <c:param name="btnAction" value="Find Job"/>
-                                                        <c:param name="searchJobValue" value=""/>
-                                                        <c:param name="selectJob" value=""/>
-                                                    </c:url>
                                                     <a href="${jobListingAll}">Find Jobs </a>
                                                 </li>
-                                                <li><a href="#">Contact us</a></li>
+                                                <!-- <li><a href="about.jsp">About</a></li> -->
+                                                <li><a href="#">Page</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.jsp">Blog</a></li>
+                                                        <li><a href="single-blog.jsp">Blog Details</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.jsp">Contact us</a></li>
                                             </ul>
                                         </nav>
                                     </div>          
@@ -111,82 +134,80 @@
             </div>
             <!-- Header End -->
         </header>
-        <!-- Hero Area Start-->
-        <div class="slider-area ">
-            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/about.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap text-center">
-                                <h2>Contact us</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hero Area End -->
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="contact-title">Get in Touch</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="#" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                                    </div>
+                <!--If job details existed-->
+                <c:if test="${not empty jobDetails}">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="contact-title">${jobDetails.jobName}</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Job Overview</h3>
+                            <div class="col-sm-10">
+                                <jsp:useBean id="String" class="java.lang.String" />
+                                <p>Job Type: ${jobDetails.jobType}</p>
+                                <p>Job Salary ${String.format("%.02f", jobDetails.salary)} VND / Month</p> 
+                                <p>Experience: ${jobDetails.jobExperience} years</p> 
+                                <p>Working location: <br/>
+                                    ${jobDetails.jobLocation}
+                                </p>
+                                <c:set var="days" value="${requestScope.days_until}"/>
+                                <c:if test="${days ge 0}">
+                                    <p>${days} days left until closed</p>
+                                </c:if>
+                                <c:if test="${days lt 0}">
+                                    <p>This job offer had closed</p>
+                                </c:if>
+                            </div>
+                            <h3>Job Requirements</h3>
+                            <div class="col-sm-10"><p>${jobDetails.jobReq}</p></div>
+
+                            <h3>Description</h3>
+                            <div class="col-sm-10"><p>${jobDetails.jobDescription}</p></div>
+                            
+
+                        </div>
+    
+                        <div class="col-lg-3 offset-lg-1">
+                            <!--This part for contact info-->
+                            <h3>${companyDetails.companyName}</h3> <br />
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-home"></i></span>
+                                <div class="media-body">
+                                    <h3>Headquarter</h3>
+                                    <p>${companyDetails.addr}</p>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                                <div class="media-body">
+                                    <h3>Phone number</h3>
+                                    <p>(+84)${companyDetails.phoneNumber}</p>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
-                            <div class="media-body">
-                                <h3>FPT University HCMC - TRƯỜNG ĐẠI HỌC FPT</h3>
-                                <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM.</p>
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-email"></i></span>
+                                <div class="media-body">
+                                    <h3>${companyDetails.email}</h3>
+                                </div>
                             </div>
                         </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                            <div class="media-body">
-                                <h3>(028) 7300 5588</h3>
-                                <p>Mon to Fri: 8AM to 12PM - 1PM to 5PM</p>
-                                <p>Sat: 8AM to 12PM</p>
-                            </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
-                            <div class="media-body">
-                                <h3>daihoc.hcm@fpt.edu.vn</h3>
-                                <p>Send us your query anytime!</p>
-                            </div>
+                        <!--End job info-->
+                    </div>
+                </c:if>
+
+
+                <c:if test="${empty jobDetails}">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>There is not such job, please try again or go back to job listing page at 
+                                <a href="${jobListingAll}" style="color:blue">here</a>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </c:if>
             </div>
         </section>
         <!-- ================ contact section end ================= -->
@@ -231,39 +252,14 @@
                                 <div class="footer-tittle">
                                     <h4>Important Link</h4>
                                     <ul>
-                                        <li><a href='index.jsp'>Home</a></li>
+                                        <li><a href='view/index.jsp'>Home</a></li>
                                         <li><a href="#">Contact Us</a></li>
                                         <li><a href="#">Support</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Newsletter</h4>
-                                    <div class="footer-pera footer-pera2">
-                                     <p>Get notifications about new jobs</p>
-                                 </div> -->
-                        <!-- Form -->
-                        <!-- <div class="footer-form" >
-                            <div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="subscribe_form relative mail_part">
-                                    <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                    class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = ' Email Address '">
-                                    <div class="form-icon">
-                                        <button type="submit" name="submit" id="newsletter-submit"
-                                        class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form.png" alt=""></button>
-                                    </div>
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-                        </div>
-                       </div>
-                   </div>
-               </div> -->
+
                     </div>
                     <!--  -->
                 </div>

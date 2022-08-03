@@ -84,13 +84,6 @@ Author     : tungn
                                             <ul id="navigation">
                                                 <li><a href="index.jsp">Home</a></li>
                                                 <li><a href="${jobListingAll}">Find Jobs </a></li>
-                                                <li><a href="#">Page</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.jsp">Blog</a></li>
-                                                        <li><a href="single-blog.jsp">Blog Details</a></li>
-
-                                                    </ul>
-                                                </li>
                                                 <li><a href="contact.jsp">Contact us</a></li>
                                             </ul>
                                         </nav>
@@ -543,59 +536,6 @@ Author     : tungn
             </div>
             <!-- Support Company End-->
             <!-- Blog Area Start -->
-            <div class="home-blog-area blog-h-padding">
-                <div class="container">
-                    <!-- Section Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle text-center">
-                                <span>Our latest blog</span>
-                                <h2>The ongoing recruiments</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="home-blog-single mb-30">
-                                <div class="blog-img-cap">
-                                    <div class="blog-img">
-                                        <img src="assets/img/blog/home-blog1.jpg" alt="">
-                                        <!-- Blog date -->
-                                        <div class="blog-date text-center">
-                                            <span>24</span>
-                                            <p>September</p>
-                                        </div>
-                                    </div>
-                                    <div class="blog-cap">
-                                        <p>FPT Software recruited:</p>
-                                        <h3><a href="single-blog.jsp">Fresher with background in JavaScript</a></h3>
-                                        <a href="#" class="more-btn">Read more �</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="home-blog-single mb-30">
-                                <div class="blog-img-cap">
-                                    <div class="blog-img">
-                                        <img src="assets/img/blog/home-blog2.jpg" alt="">
-                                        <!-- Blog date -->
-                                        <div class="blog-date text-center">
-                                            <span>15</span>
-                                            <p>July</p>
-                                        </div>
-                                    </div>
-                                    <div class="blog-cap">
-                                        <p>Viettel Cooperation recruited:</p>
-                                        <h3><a href="single-blog.jsp">Junior in Python</a></h3>
-                                        <a href="#" class="more-btn">Read more �</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Blog Area End -->
 
         </main>
