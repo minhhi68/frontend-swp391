@@ -525,10 +525,7 @@ Author     : tungn
                                 <div class="support-caption">
                                     <p class="pera-top">We always welcome young people with a little experiences and young fresher graduate students. This is the place where you will feel like your home. </p>
                                     <p>Post your jobs you need to recruit below and we will do the rest.</p>
-                                    <a style="color: black" class="btn post-btn"
-                                        href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/StudentCV/LoginGoogleController&response_type=code&client_id=367863869149-p52rvo311i3dh3oolbjcimig62rh97af.apps.googleusercontent.com&approval_prompt=force">
-                                        Post a job
-                                    </a>
+                                    <a href="job_posting.jsp" class="btn post-btn">Post a job</a>
                                 </div>
                             </div>
                         </div>

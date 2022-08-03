@@ -7,23 +7,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" /><!doctype html>
-<c:set var="jobDetails" value="${requestScope.DETAILS_RESULT}"/>
-<!--If job details existed-->
-<c:if test="${not empty jobDetails}">
-    <c:set var="companyDetails" value="${jobDetails.company}"/>
-</c:if>
-
 <html class="no-js" lang="zxx">
 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <c:if test="${not empty jobDetails}">
-            <title>${companyDetails.companyName} đang tuyển dụng ${jobDetails.jobName}</title>
-        </c:if>
-        <c:if test="${empty jobDetails}">
-            <title>Job Error</title>
-        </c:if>
+        <title>Job Posting</title>
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,14 +79,6 @@
                                                 <li>
                                                     <a href="${jobListingAll}">Find Jobs </a>
                                                 </li>
-                                                <!-- <li><a href="about.jsp">About</a></li> -->
-                                                <li><a href="#">Page</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.jsp">Blog</a></li>
-                                                        <li><a href="single-blog.jsp">Blog Details</a></li>
-
-                                                    </ul>
-                                                </li>
                                                 <li><a href="contact.jsp">Contact us</a></li>
                                             </ul>
                                         </nav>
@@ -144,80 +125,31 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
-                <!--If job details existed-->
-                <c:if test="${not empty jobDetails}">
-                    <div class="row">
-                        <form action="MainController">
-                            <div class="col-12">
-                                <h2 class="contact-title">${jobDetails.jobName}</h2>
-                            </div>
-                            <div class="col-lg-8">
-                                <h3>Job Overview</h3>
-                                <div class="col-sm-10">
-                                    <jsp:useBean id="String" class="java.lang.String" />
-                                    <p>Job Type: ${jobDetails.jobType}</p>
-                                    <p>Job Salary ${String.format("%.02f", jobDetails.salary)} VND / Month</p> 
-                                    <p>Experience: ${jobDetails.jobExperience} years</p> 
-                                    <p>Working location: <br/>
-                                        ${jobDetails.jobLocation}
-                                    </p>
-                                    <c:set var="days" value="${requestScope.days_until}"/>
-                                    <c:if test="${days ge 0}">
-                                        <p>${days} days left until closed</p>
-                                    </c:if>
-                                    <c:if test="${days lt 0}">
-                                        <p>This job offer had closed</p>
-                                    </c:if>
-                                </div>
-                                <h3>Job Requirements</h3>
-                                <div class="col-sm-10"><p>${jobDetails.jobReq}</p></div>
-
-                                <h3>Description</h3>
-                                <div class="col-sm-10"><p>${jobDetails.jobDescription}</p></div>
-                            </div>
-                            
-                            <input type="submit" name="btnAction" value="Post Job" />
-                        </form>
-
-    
-                        <div class="col-lg-4 offset-lg-1">
-                            <!--This part for contact info-->
-                            <h3>${companyDetails.companyName}</h3> <br />
-                            <div class="media contact-info">
-                                <span class="contact-info__icon"><i class="ti-home"></i></span>
-                                <div class="media-body">
-                                    <h3>Headquarter</h3>
-                                    <p>${companyDetails.addr}</p>
-                                </div>
-                            </div>
-                            <div class="media contact-info">
-                                <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                                <div class="media-body">
-                                    <h3>Phone number</h3>
-                                    <p>(+84)${companyDetails.phoneNumber}</p>
-                                </div>
-                            </div>
-                            <div class="media contact-info">
-                                <span class="contact-info__icon"><i class="ti-email"></i></span>
-                                <div class="media-body">
-                                    <h3>${companyDetails.email}</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End job info-->
-                    </div>
-                </c:if>
-
-
-                <c:if test="${empty jobDetails}">
+                <form action="MainController">
                     <div class="row">
                         <div class="col-12">
-                            <p>There is not such job, please try again or go back to job listing page at 
-                                <a href="${jobListingAll}" style="color:blue">here</a>
-                            </p>
+                            <p>Title: </p>
+                            <h2 class="contact-title">${jobDetails.jobName}</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3>Job Overview</h3>
+                            <div class="col-sm-10">
+                                <p>Company ID: </p>
+                                <p>Job Type: </p>
+                                <p>Job Salary: VND / Month</p> 
+                                <p>Experience:  years</p> 
+                                <p>Working location: <br/>
+                                </p>
+                            </div>
+                            <h3>Job Requirements</h3>
+                            <div class="col-sm-10"><p>${jobDetails.jobReq}</p></div>
+
+                            <h3>Description</h3>
+                            <div class="col-sm-10"><p>${jobDetails.jobDescription}</p></div>
+                            <input type="submit" name="btnAction" value="Post Job" />
                         </div>
                     </div>
-                </c:if>
+                </form>
             </div>
         </section>
         <!-- ================ contact section end ================= -->
