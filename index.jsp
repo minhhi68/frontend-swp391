@@ -39,6 +39,12 @@ Author     : tungn
     </head>
 
     <body>
+        <!--Variables-->
+        <c:url var="jobListingAll" value="MainController">
+            <c:param name="btnAction" value="Find Job"/>
+            <c:param name="searchJobValue" value=""/>
+            <c:param name="selectJob" value=""/>
+        </c:url>
         <!-- Preloader Start -->
         <div id="preloader-active">
             <div class="preloader d-flex align-items-center justify-content-center">
@@ -77,14 +83,7 @@ Author     : tungn
                                         <nav class="d-none d-lg-block">
                                             <ul id="navigation">
                                                 <li><a href="index.jsp">Home</a></li>
-                                                <li>
-                                                    <c:url var="jobListingAll" value="MainController">
-                                                        <c:param name="btnAction" value="Find Job"/>
-                                                        <c:param name="searchJobValue" value=""/>
-                                                        <c:param name="selectJob" value=""/>
-                                                    </c:url>
-                                                    <a href="${jobListingAll}">Find Jobs </a>
-                                                </li>
+                                                <li><a href="${jobListingAll}">Find Jobs </a></li>
                                                 <li><a href="#">Page</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.jsp">Blog</a></li>
@@ -276,7 +275,7 @@ Author     : tungn
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="browse-btn2 text-center mt-50">
-                                <a href="job_listing.jsp" class="border-btn2">Browse All Available Jobs</a>
+                                <a href="${jobListingAll}" class="border-btn2">Browse All Available Jobs</a>
                             </div>
                         </div>
                     </div>
