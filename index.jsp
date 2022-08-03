@@ -93,21 +93,18 @@ Author     : tungn
                                     <c:set var="account" value="${sessionScope.USER}"/>
                                     <%--not empty means there is an account, check for admin role --%>
                                     <c:if test="${not empty account}">
-                                        Welcome, ${account.email}        
                                         <c:url var="logoutAccount" value="MainController">
                                             <c:param name="btnAction" value="Logout"/>
                                         </c:url>
-                                        <i class="fa-solid fa-circle-user"></i>
-                                        <a href="#">My profile</a>
-                                        <a href="#">Edit profile</a>
-                                        <li>
-                                            <a href="#">Page</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.jsp">Blog</a></li>
-                                                <li><a href="single-blog.jsp">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <a href="${logoutAccount}" class="btn head-btn2">Logout</a>
+                                        Welcome, ${account.email}
+                                        <div class="dropdown">
+                                            <button class="dropbtn"><i class="fa fa-user-circle"></i> Account</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">My profile</a>
+                                                <a href="#">Edit profiles</a>
+                                                <a href="${logoutAccount}">Logout</a>
+                                            </div>
+                                        </div>
                                     </c:if>
                                     
                                     <%--Guest section --%>        

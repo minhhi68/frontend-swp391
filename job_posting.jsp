@@ -106,11 +106,18 @@
                                     <c:set var="account" value="${sessionScope.USER}"/>
                                     <%--not empty means there is an account, check for admin role --%>
                                     <c:if test="${not empty account}">
-                                        Welcome, ${account.email}        
                                         <c:url var="logoutAccount" value="MainController">
                                             <c:param name="btnAction" value="Logout"/>
                                         </c:url>
-                                        <a href="${logoutAccount}" class="btn head-btn2">Logout</a>
+                                        Welcome, ${account.email}
+                                        <div class="dropdown">
+                                            <button class="dropbtn"><i class="fa fa-user-circle"></i> Account</button>
+                                            <div class="dropdown-content">
+                                                <a href="#">My profile</a>
+                                                <a href="#">Edit profiles</a>
+                                                <a href="${logoutAccount}">Logout</a>
+                                            </div>
+                                        </div>
                                     </c:if>
                                     
                                     <%--Guest section --%>        
