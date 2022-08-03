@@ -438,33 +438,6 @@
                         </div>
                     </div>
                     <!--  -->
-                    <div class="row footer-wejed justify-content-between">
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <!-- logo -->
-                            <!-- <div class="footer-logo mb-20">
-                    <a href="index.jsp"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                    </div> -->
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                            <div class="footer-tittle-bottom">
-                                <span>5000+</span>
-                                <p>Jobs updated regularly</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                            <div class="footer-tittle-bottom">
-                                <span>451</span>
-                                <p>CV uploaded</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                            <!-- Footer Bottom Tittle -->
-                            <div class="footer-tittle-bottom">
-                                <span>668</span>
-                                <p>Jobs found</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- footer-bottom area -->
